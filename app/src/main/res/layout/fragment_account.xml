@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Profile"
+            android:textColor="@color/gray_solid"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/image_account"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/text_title"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:src="@drawable/photo_profile" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_account"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/photo_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_title"
+            app:civ_border_color="#B3757575"
+            app:civ_border_overlay="true"
+            app:civ_border_width="0dp"
+            app:civ_fill_color="#B3CFD8DC" />
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_id"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

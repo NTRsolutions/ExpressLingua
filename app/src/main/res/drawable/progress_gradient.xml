@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromDegrees="0"
+    android:toDegrees="1440"
+    android:pivotX="50%"
+    android:pivotY="50%" >
+    <!--Speedup rotation by multiple 360 * 4 = 1440 to toDegrees attribute-->
+
+    <shape
+        android:dither="true"
+        android:innerRadiusRatio="5"
+        android:thicknessRatio="10.0"
+        android:shape="ring"
+        android:useLevel="false" >
+
+        <size
+            android:height="48dp"
+            android:width="48dp" />
+
+        <gradient
+            android:centerY="0.5"
+            android:endColor="@color/button_indicator"
+            android:startColor="@color/white"
+            android:type="sweep"
+            android:useLevel="false" />
+
+    </shape>
+
+</rotate>

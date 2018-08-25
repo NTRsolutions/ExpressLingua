@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neosolusi.expresslingua.features.group.listcontact.ListContactActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_with_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Contacts"
+        android:textColor="@color/color_text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <EditText
+        android:id="@+id/edit_contacts_search"
+        style="@style/EditTextSecondStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cursorVisible="true"
+        android:hint="Add people..."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingBottom="0dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_selected_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_list_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_bg_app"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    android:overScrollMode="never"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarThumbVertical="@drawable/shape_scrollbar"
+                    android:scrollbarTrackVertical="@drawable/shape_scrollbar_track"
+                    android:scrollbars="vertical" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_contact_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_done_white"
+                    android:layout_gravity="end|bottom"
+                    app:elevation="8dp"
+                    app:fabSize="normal" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab_contact_done"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:src="@drawable/ic_done_white"-->
+            <!--android:layout_gravity="end|bottom"-->
+            <!--app:elevation="8dp"-->
+            <!--app:fabSize="normal" />-->
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

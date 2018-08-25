@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neosolusi.expresslingua.features.group.group.GroupActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_with_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@drawable/background" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintTop_toTopOf="@+id/background">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout_group_image_holder"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_group"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_group_placeholder"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/shape_oval_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_group_icon_holder"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_camera"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_group_placeholder"
+                    app:layout_constraintEnd_toEndOf="@+id/image_group_placeholder"
+                    app:layout_constraintStart_toStartOf="@+id/image_group_placeholder"
+                    app:layout_constraintTop_toTopOf="@+id/image_group_placeholder" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/edit_group_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                android:hint="Enter group name"
+                android:imeActionLabel="Done"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxEms="10"
+                android:textSize="18sp"
+                android:theme="@style/EditTextSecondStyle"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_edit"
+                app:layout_constraintStart_toEndOf="@+id/layout_group_image_holder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_group_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="12dp"
+                android:textSize="18sp"
+                android:text="@string/text_group_name_placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_edit"
+                app:layout_constraintStart_toEndOf="@+id/layout_group_image_holder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button_edit"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/text_group_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_group_name" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/background"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@color/white_gray2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="Options"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/text_label_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="Privacy"
+                        android:textSize="18sp" />
+
+                    <Switch
+                        android:id="@+id/option_switch_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end|center_vertical" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/text_label_translate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="Translate"
+                        android:textSize="18sp" />
+
+                    <Switch
+                        android:id="@+id/option_switch_translate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end|center_vertical" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@color/white_gray2" />
+
+                    <TextView
+                        android:id="@+id/text_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="Members 0"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_group_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <Button
+                    android:layout_marginTop="32dp"
+                    android:id="@+id/button_group_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/indikator_green"
+                    android:text="Create Group"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_marginTop="32dp"
+                    android:id="@+id/button_group_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/indikator_red"
+                    android:text="Delete Group"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

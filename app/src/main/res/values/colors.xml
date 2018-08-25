@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B9DBF7</color>
+    <color name="colorPrimaryDark">#B9DBF7</color>
+    <color name="colorAccent">#0E488C</color> <!--#FF4081-->
+    <color name="colorHeader">#608bbe</color>
+    <color name="colorHeaderPrimary">#B9DBF7</color>
+    <color name="colorFooterPrimary">#0E488C</color> <!--659ad8 70083263-->
+    <color name="colorListSelection">#ffddfa</color> <!--#70659AD8-->
+    <color name="colorListSecondSelection">#90fcf1b3</color> <!--FC92B5, #FFCBCBCB, dddddd-->
+    <color name="colorListSection">#80d3e7ff</color>
+    <color name="color_text">#194274</color>
+    <color name="colorTextSelection">#40FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_gray">#d5d4d9</color>
+    <color name="white_gray2">#f1f1f1</color>
+    <color name="gray_solid">#5d5d5d</color>
+    <color name="gray">#989797</color>
+    <color name="gray_black">#322e4c</color>
+    <color name="red">#ff2600</color>
+    <color name="red_solid">#841616</color>
+    <color name="ungu_clear2">#3c415e</color>
+    <color name="ungu_clear1">#483848</color>
+    <color name="green_old">#2e655f</color>
+    <color name="green_old2">#142d2a</color>
+    <color name="green_soft">#82c5be</color>
+    <color name="btn_disable">#D7DCDF</color>
+    <color name="blue">#607ae8</color>
+    <color name="blue_solid">#184173</color>
+    <color name="blue_sky">#5f73f6</color>  <!--#5e73f5-->
+    <color name="blue_sky_disable">#70CCCCCC</color>
+
+    <color name="photo_tint">#7f101010</color>
+
+    <color name="default_dark_muted">#44424f</color>
+    <color name="default_dark_vibrant">#7b400a</color>
+    <color name="default_vibrant">#f3aa66</color>
+    <color name="default_light_muted">#c9be9c</color>
+    <color name="default_light_vibrant">#fcda99</color>
+    <color name="default_muted">#7f7c8a</color>
+
+    <!-- Indicator -->
+    <color name="button_indicator">#6176f6</color>
+    <color name="indikator_red">#e91d29</color>
+    <color name="indikator_orange">#ff7e2a</color>
+    <color name="indikator_yellow">#ede203</color>
+    <color name="indikator_green">#4bc829</color>
+    <color name="indikator_blue">#1282e3</color>
+    <color name="selection_red">#e91d29</color>
+    <color name="selection_orange">#ff7e2a</color>
+    <color name="selection_yellow">#ede203</color>
+    <color name="selection_green">#4bc829</color>
+    <color name="selection_blue">#1282e3</color>
+
+    <color name="title">#222222</color>
+</resources>

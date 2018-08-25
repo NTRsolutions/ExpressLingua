@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_flashcard_word"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorHeaderPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/itemFlashCardSpeak"
+                    style="?android:attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:minWidth="24dp"
+                    android:scaleType="center"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:tint="@color/gray_black"
+                    app:layout_constraintBottom_toTopOf="@id/guideline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline"
+                    app:srcCompat="@drawable/ic_volume_up_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemFlashCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/itemFlashCardTranslation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextTranslation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your translation"
+                        android:inputType="text"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemFlashCardSample1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:text="a."
+                    android:textSize="@dimen/flashcard_sample_fontsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemFlashCardSample1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/flashcard_sample_fontsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemFlashCardSample2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:text="b."
+                    android:textSize="@dimen/flashcard_sample_fontsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemFlashCardSample2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/flashcard_sample_fontsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemFlashCardSample3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:text="c."
+                    android:textSize="@dimen/flashcard_sample_fontsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemFlashCardSample3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/flashcard_sample_fontsize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorFooterPrimary" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-12dp"
+                android:background="@drawable/shape_button2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_keyboard_arrow_down_24dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

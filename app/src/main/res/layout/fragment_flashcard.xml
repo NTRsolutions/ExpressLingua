@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neosolusi.expresslingua.features.flashcard.FlashcardActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/activity_flashcards_heading"
+            android:textColor="@color/color_text"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+        <View
+            android:id="@+id/view_indicator"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+        <TextView
+            android:id="@+id/text_goto_sentence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Goto Sentences"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/text_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_header" />
+
+        <!--SINGLE LAYOUT-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_single"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_header">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_single_more"
+                    style="?android:attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:minWidth="24dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+                <View
+                    android:id="@+id/view_single_indicator"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/button_single_more"
+                    android:paddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/text_single_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_single_translation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/text_single_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--MULTIPLE LAYOUT-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_multiple"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_header">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_flashcard_word"
+                android:name=".features.flashcard.FlashcardActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".features.flashcard.FlashcardActivity" />
+
+        </android.support.v7.widget.CardView>
+
+        <!--NO CARD LAYOUT-->
+        <TextView
+            android:id="@+id/text_no_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="64dp"
+            android:drawablePadding="16dp"
+            android:drawableTop="@drawable/ic_assignment_turned_in_gray_64dp"
+            android:text="@string/empty_flashcard"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/text_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+        <TextView
+            android:id="@+id/text_holder"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/note_bottom"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <include
+            android:id="@+id/layout_mastering"
+            layout="@layout/content_mastering"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- BOTTOM SHEET -->
+    <include layout="@layout/bottom_sheet_flashcard_word" />
+
+</android.support.design.widget.CoordinatorLayout>

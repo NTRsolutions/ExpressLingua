@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_content_flashcard_word"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_gray2"
+    android:maxHeight="?android:attr/listPreferredItemHeight"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <ImageButton
+        android:id="@+id/item_button_flashcard_speak"
+        style="?android:attr/actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:minWidth="24dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/ic_volume_up_24dp"
+        android:tint="@color/colorFooterPrimary"/>
+
+    <LinearLayout
+        android:id="@+id/item_layout_flashcard_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/item_button_flashcard_more"
+        app:layout_constraintStart_toEndOf="@+id/item_button_flashcard_speak"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <TextView
+            android:id="@+id/item_text_flashcard_card"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/item_text_flashcard_translation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/item_button_flashcard_more"
+        style="?android:attr/actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:minWidth="24dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp"
+        android:tint="@color/gray"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

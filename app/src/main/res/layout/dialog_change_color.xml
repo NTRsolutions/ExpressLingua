@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Dari"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/group_color_from"
+        app:layout_constraintStart_toStartOf="@id/group_color_from" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ke"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/group_color_to"
+        app:layout_constraintStart_toStartOf="@id/group_color_to" />
+
+    <RadioGroup
+        android:id="@+id/group_color_from"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/shape_white_gray"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_right_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_from_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Red"
+            android:textColor="@color/indikator_red" />
+
+        <RadioButton
+            android:id="@+id/radio_from_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:textColor="@color/indikator_orange" />
+
+        <RadioButton
+            android:id="@+id/radio_from_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textColor="@color/indikator_yellow" />
+
+        <RadioButton
+            android:id="@+id/radio_from_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textColor="@color/indikator_green" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/group_color_to"
+        app:layout_constraintStart_toEndOf="@+id/group_color_from"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape_right_arrow" />
+
+    <RadioGroup
+        android:id="@+id/group_color_to"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/shape_white_gray"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_right_arrow"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_to_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="@color/indikator_red" />
+
+        <RadioButton
+            android:id="@+id/radio_to_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Orange"
+            android:textColor="@color/indikator_orange" />
+
+        <RadioButton
+            android:id="@+id/radio_to_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textColor="@color/indikator_yellow" />
+
+        <RadioButton
+            android:id="@+id/radio_to_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textColor="@color/indikator_green" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

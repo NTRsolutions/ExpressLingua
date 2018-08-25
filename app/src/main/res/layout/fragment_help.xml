@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Help Content"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_help_home"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@null"
+        android:scaleType="center"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:src="@drawable/icon_left_home"
+        android:tint="@color/colorFooterPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_help_home"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_help_tutorial"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="16dp"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Tutorial Dasar"
+            android:textAllCaps="false"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider" />
+
+        <Button
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="16dp"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Tutorial lanjutan (Coming soon)"
+            android:textAllCaps="false"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider" />
+
+        <Button
+            android:id="@+id/button_help_video"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="16dp"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Video tutorial"
+            android:textAllCaps="false"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider" />
+
+        <Button
+            android:id="@+id/button_help_download"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="16dp"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Download panduan belajar bahasa Inggris"
+            android:textAllCaps="false"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+</RelativeLayout>

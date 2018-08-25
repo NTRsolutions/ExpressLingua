@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_left_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/icon_left_profile"
+            android:title="Account" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_left_setting"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/icon_left_help"
+            android:title="Help" />
+    </group>
+
+    <item
+        android:id="@+id/nav_item_group"
+        android:title="Group">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_group"
+                    android:icon="@drawable/ic_people"
+                    android:title="Groups" />
+                <item
+                    android:id="@+id/nav_new_group"
+                    android:icon="@drawable/ic_people_add"
+                    android:title="New Group" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_admin"
+        android:title="Admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_export"
+                    android:icon="@drawable/icon_left_import_export"
+                    android:title="Export" />
+
+                <item
+                    android:id="@+id/nav_backup"
+                    android:icon="@drawable/icon_left_backup"
+                    android:title="Backup" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icon_left_logout"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share"/>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send"/>-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

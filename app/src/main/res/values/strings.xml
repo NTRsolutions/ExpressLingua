@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">ExpressLingua</string>
+    <string name="app_version">ver.1.0.3</string>
+    <string name="text_logo_express">Express</string>
+    <string name="text_logo_lingua">Lingua</string>
+    <string name="app_footer">www.expresslingua.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="action_settings">Settings</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="action_logout">Logout</string>
+    <string name="flashcard_note">Fitur flashcard multiple berfungsi mempercepat kefasihan (fluency), terutama kata dan kalimat dari kategori mudah (kuning) menjadi sangat mudah (hijau)</string>
+    <string name="activity_stories_heading">Learn English through Story</string>
+    <string name="button_reading">Reading</string>
+    <string name="button_flashcards">Flashcards</string>
+    <string name="button_exit">Home</string>
+    <string name="activity_lessons_heading">Lessons</string>
+    <string name="activity_flashcards_heading">Flashcards</string>
+    <string name="title_activity_list_group">ListGroupActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+
+    <!--Provider-->
+    <string name="file_provider">com.neosolusi.expresslingua.fileprovider</string>
+
+    <!--Typeface-->
+    <string name="fa_volume_up">&#xf028;</string>
+    <string name="fa_tag">&#xf02b;</string>
+
+    <!-- Slide Menu -->
+    <!-- navigation drawer icon -->
+    <string-array name="nav_drawer_icon">
+        <item>@drawable/icon_left_home</item>
+        <item>@drawable/icon_left_profile</item>
+        <item>@drawable/icon_left_setting</item>
+        <item>@drawable/icon_left_help</item>
+        <item>@drawable/icon_left_about</item>
+        <item>@drawable/icon_left_logout</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_account">My Account</string>
+    <string name="nav_item_setting">Setting</string>
+    <string name="nav_item_help">Help</string>
+    <string name="nav_item_about">About</string>
+    <string name="nav_item_exit">Exit</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_account</item>
+        <item>@string/nav_item_setting</item>
+        <item>@string/nav_item_help</item>
+        <item>@string/nav_item_about</item>
+        <item>@string/nav_item_exit</item>
+    </string-array>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Setting</item>
+        <!--<item>Poin</item>
+        <item>History</item>-->
+        <item>Help</item>
+        <item>About</item>
+        <item>Exit</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Player Auido -->
+    <string name="back"><![CDATA[>]]></string>
+    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="forward"><![CDATA[>>]]></string>
+    <string name="pause">||</string>
+    <string name="button_back">back icon</string>
+    <string name="player_artwork">media_artwork</string>
+    <string name="player_thumbnail">media_thumbnail</string>
+    <string name="register_hint_userid">User ID</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_password">Password</string>
+    <string name="register_hint_phone">Phone</string>
+    <string name="register_hint_Address">Address</string>
+    <string name="register_hint_country">Country</string>
+    <string name="register_button_submit">Create Account</string>
+    <string name="login_button_submit">Login</string>
+    <string name="login_button_register">Daftar Pengguna Baru</string>
+    <string name="home_page">www.expresslingua.com</string>
+    <string name="exo_prev">previous</string>
+    <string name="exo_rewind">Rewind</string>
+    <string name="exo_play">Play</string>
+    <string name="exo_pause">Pause</string>
+    <string name="exo_ffwd">Forward</string>
+    <string name="exo_next">Next</string>
+    <string name="add_flashcard_dialog_title">Please Choose The Difficulty Level</string>
+    <string name="empty_flashcard">You have no card!</string>
+    <string name="search">Search</string>
+
+    <!--Error message-->
+    <string name="error_empty_input_userid">Userid harus diisi</string>
+    <string name="error_empty_input_password">Password harus diisi</string>
+    <string name="error_network_access">Login failed, please try again letter</string>
+    <string name="error_connection">Connection Failed</string>
+
+    <!--Tutorial-->
+    <string name="tutorial_step_one"><b>"\Home"\</b> screen atau layar Home berfungsi:\na. Sebagai <b>Menu Utama</b> untuk akses mudah dan cepat ke seluruh fitur.\nb. Sebagai <b>Dashboard</b> untuk melihat kemajuan pencapaian Anda yang juga digunakan untuk mempercepat kemajuan anda melalui akses dengan mudah ke masing-masing pencapaian tsb.</string>
+    <string name="tutorial_step_two"><b>Learn English through Story</b> adalah fitur untuk belajar bahasa Inggris lewat cerita dan merupakan materi dasar utama. Ini adalah materi awal untuk Anda mulai belajar.\nSub menu <b>Reading</b> terdiri dari 2 episode cerita  menarik dan inspiratif.</string>
+    <string name="tutorial_step_three">Pilihlah <b>Lesson 1 - Meeting a New Friend from Overseas</b> untuk memulai belajar pada menu <b>First Minute Revolution</b> (Revolusi Menit Pertama).</string>
+    <string name="tutorial_step_four">Ini adalah <b>layar pertama dan utama</b> untuk mulai belajar bahasa Inggris menggunakan ExpressLingua. Pelajarilah cerita dan penjelasannya lalu <b>tentukan tingkat kesulitannya</b>, baik kata-katanya maupun kalimat-kalimatnya. Anda dapat memilih objek dan menentukan tingkat kesulitannya hanya 2x klik. Sebuah objek bisa berupa kata, blok kata/kalimat atau bahkan seluruh materi dalam satu pelajaran. Sebuah blok dibatasi oleh garis horisontal.</string>
+    <string name="tutorial_step_five">Warna vertikal di sisi kiri menunjukan tingkat kesulitan blok kalimat dan warna pada teks menunjukan tingkat kesulitan dari kata-kata yang bersangkutan. Arti dari masing-masing warna adalah: Merah=sangat sulit, Jingga=agak sulit, Kuning=agak mudah, hijau=sangat mudah, Biru=master.</string>
+    <string name="tutorial_step_six">Fitur <b>Flashcard</b> akan secara otomatis melakukan pengulangan lebih sering materi yang sulit dibandingkan yang mudah.\nIni adalah <b>flashcard jenis lambat</b>, dan digunakan untuk menghafal materi yang sangat sulit dan agak sulit (merah dan jingga).</string>
+    <string name="tutorial_step_seven">""</string>
+    <string name="tutorial_step_eight">Ini adalah <b>flashcard jenis cepat</b>, dan digunakan untuk menghafal materi yang agak mudah dan sangat mudah (kuning dan hijau).</string>
+    <string name="tutorial_step_nine">Fitur <b>Challenges</b> mempercepat kemajuan anda melalui latihan dan recalling.\nIni adalah Written Challenge.</string>
+    <string name="tutorial_step_ten">Ini adalah Pronunciation Challenge.</string>
+    <string name="tutorial_step_twelve">Ini adalah Translation Challenge.</string>
+    <string name="tutorial_step_last">Petunjuk lebih lanjut dapat dilihat pada:\na. Tutorial Lanjutan pada aplikasi ini.\nb. Student Guide yang bisa anda download dari website.</string>
+
+    <!--Speech Recognize Error message-->
+    <string name="error_audio_error">Error audio</string>
+    <string name="error_client">Error_client</string>
+    <string name="error_permission">Error permission</string>
+    <string name="error_network">Error network</string>
+    <string name="error_timeout">Error timeout</string>
+    <string name="error_no_match">Error no match</string>
+    <string name="error_busy">Error busy</string>
+    <string name="error_server">Error server</string>
+    <string name="error_understand">Error undefined</string>
+    <string name="note_bottom">Silahkan ganti tingkat kesulitannya</string>
+    <string name="text_group_name_placeholder">Nama group...</string>
+
+</resources>

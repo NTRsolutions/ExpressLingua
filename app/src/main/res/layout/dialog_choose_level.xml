@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_popup_flashcard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_text_dialog_lesson_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_text_dialog_lesson_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/item_text_dialog_lesson_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/item_button_dialog_lesson_veryhard"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dialog_indicator_margin"
+        android:layout_marginTop="@dimen/dialog_indicator_margin"
+        android:background="@drawable/shape_red"
+        android:padding="5dp"
+        android:text="Very Hard"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/item_button_dialog_lesson_hard"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dialog_indicator_margin"
+        android:layout_marginTop="@dimen/dialog_indicator_margin"
+        android:background="@drawable/shape_orange"
+        android:padding="5dp"
+        android:text="Hard"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/item_button_dialog_lesson_easy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dialog_indicator_margin"
+        android:layout_marginTop="@dimen/dialog_indicator_margin"
+        android:background="@drawable/shape_yellow"
+        android:padding="5dp"
+        android:text="Easy"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/item_button_dialog_lesson_veryeasy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dialog_indicator_margin"
+        android:layout_marginTop="@dimen/dialog_indicator_margin"
+        android:background="@drawable/shape_green"
+        android:padding="5dp"
+        android:text="Very Easy"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

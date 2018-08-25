@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLessonContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_gray2"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingStart="0dp">
+
+    <View
+        android:id="@+id/itemLessonLevel"
+        android:layout_width="8dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp">
+
+        <TextView
+            android:id="@+id/itemLessonActor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="0dp"/>
+
+        <TextView
+            android:id="@+id/itemLessonSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start|top"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="0dp"
+            android:text="@string/fa_volume_up"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemLessonSentence"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColorHighlight="@color/blue"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/itemLessonTranslation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

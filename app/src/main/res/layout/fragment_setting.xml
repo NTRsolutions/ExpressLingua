@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.neosolusi.expresslingua.features.side.SettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Settings"
+            android:textColor="@color/gray_solid"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_bg_app"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_setting_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_url"
+                android:text="URL Name Wiktionary"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textUri"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/text_setting_max_new_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_max_new_card"
+                android:text="Maksimum jumlah flashcard baru / hari"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_max_new_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/text_setting_max_fluency_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_max_fluency_card"
+                android:text="Maksimum jumlah flashcard mudah / hari"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_max_fluency_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/text_setting_max_reviewed_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_max_review_card"
+                android:text="Maksimum jumlah flashcard / hari"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_max_review_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/text_setting_max_challenge_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_max_challenge_orange"
+                android:text="Maksimum kalimat orange pada Challenges (%)"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_max_challenge_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/text_setting_min_pass_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/edit_setting_min_pass_lesson"
+                android:text="Minimum jawaban benar(%)"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_setting_min_pass_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:theme="@style/MyEditText" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_button3"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
